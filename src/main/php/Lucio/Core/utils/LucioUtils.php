@@ -55,6 +55,7 @@ class LucioUtils {
 	const LUCIO_CONCEPTO_MOVIMIENTO_ANULACIONPEDIDO= 10;
 
 
+    const LUCIO_MARCA_PROPIA = 1;
 
 	const LUCIO_CUENTA_UNICA = 1;
 
@@ -792,6 +793,11 @@ class LucioUtils {
 
 		return ServiceFactory::getConceptoMovimientoService()->get( self::LUCIO_CONCEPTO_MOVIMIENTO_ACTUALIZACION);
 	}
+
+    public static function getMarcaPropia(){
+
+        return ServiceFactory::getMarcaProductoService()->get( self::LUCIO_MARCA_PROPIA );
+    }
 
 
 	public static function getCuentaUnica(){
