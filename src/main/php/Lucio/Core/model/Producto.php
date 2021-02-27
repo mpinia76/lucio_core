@@ -136,7 +136,7 @@ class Producto extends Entity{
 	}
 
 	public function __toString(){
-		 return $this->getTipoProducto()->getNombre().' '.$this->getNombre();
+		 return $this->getTipoProducto()->getNombre().' '.$this->getMarcaProducto()->getNombre().' '.$this->getNombre();
 	}
 
 
